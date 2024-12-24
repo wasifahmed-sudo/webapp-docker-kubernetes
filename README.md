@@ -39,7 +39,7 @@ The Flask application provides a simple web interface to add and view data store
 ```bash
 git clone git@github.com:wasifahmed-sudo/webapp-docker-kubernetes.git
 
-cd git@github.com:wasifahmed-sudo/webapp-docker-kubernetes.git
+cd webapp-docker-kubernetes
 ```
 
 
