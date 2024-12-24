@@ -1,0 +1,38 @@
+# General system files
+.DS_Store
+Thumbs.db
+
+# Python-specific files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+*.env
+
+# Docker-specific files
+*.log
+*.pid
+.env
+
+# Kubernetes-specific files
+*.crt
+*.key
+*.pem
+secrets.yaml
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs and temporary files
+logs/
+*.log
+*.out
+*.tmp
+
+# Persistent storage files
+mysql-data/
+*.db
