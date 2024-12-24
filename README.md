@@ -57,12 +57,28 @@ http://localhost:35622/add_data
 ```bash
 kubectl config use-context docker-desktop
 ```
+2. **Install the NGINX Ingress Controller**:
+```bash
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.1/deploy/static/provider/cloud/deploy.yaml
+```
+First, let's save the current service configuration:
+```bash
+kubectl get svc ingress-nginx-controller -n ingress-nginx -o yaml > original-nginx-svc.yaml
+```
+Then delete the existing service:
+```bash
+kubectl delete svc ingress-nginx-controller -n ingress-nginx
+```
+Apply the new file:
+```bash
+kubectl apply -f k8s/nginx/nginx-svc.yaml
+```
 
-2. **Deploy the Application:**
+3. **Deploy the Application:**
 ```bash
 kubectl apply -f k8s/
 ```
-3. **Access the Application:**
+4. **Access the Application:**
 ```bash
 http://localhost:35622/add_data
 ```

@@ -1,4 +1,8 @@
-apiVersion: v1
+# Purpose of Editing the NGINX Ingress Controller Service File
+#
+# The purpose of editing this file is to expose the Flask application on a custom port (35622) for HTTP traffic.
+# This change ensures that the application can be accessed via http://localhost:35622/ while maintaining the defaultapiVersion: v1
+
 kind: Service
 metadata:
   name: ingress-nginx-controller
