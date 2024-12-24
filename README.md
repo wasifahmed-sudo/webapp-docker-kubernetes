@@ -37,7 +37,7 @@ The Flask application provides a simple web interface to add and view data store
 1. **Clone the Repository**:
 
 ```bash
-(git clone git@github.com:wasifahmed-sudo/webapp-docker-kubernetes.git)
+git clone git@github.com:wasifahmed-sudo/webapp-docker-kubernetes.git
 
 cd git@github.com:wasifahmed-sudo/webapp-docker-kubernetes.git
 ```
@@ -75,7 +75,7 @@ http://localhost:35622/add_data
 
 ### Exposing the Web Application to the Outside World in K8s
 
--   **Ingress**: The application is exposed to the outside world using an Ingress resource. The Ingress routes traffic from `http://localhost:35622/` to the Flask application.
+-   **Ingress**: The application is exposed to the outside world using an Ingress resource. The Ingress routes traffic from `http://localhost:35622/add_data` to the Flask application.
 -   **NGINX Ingress Controller**: The NGINX Ingress Controller is used to handle traffic routing.
 
 ### Configuring Auto-Scaling for the Application
